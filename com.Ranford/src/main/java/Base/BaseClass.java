@@ -15,6 +15,7 @@ public class BaseClass {
 	{
 		
 			try {
+				System.out.println("Prarthana is great");
 				File f=new File(System.getProperty("user.dir")+"\\src\\main\\java\\configuration\\config.properties");
 				//	File f=new File(D:\BSSW5\com.Ranford\src\main\java\configuration\config.properties)
 				FileReader fr=new FileReader(f);
