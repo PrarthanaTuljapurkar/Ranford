@@ -15,6 +15,7 @@ public class GenericPage extends BaseClass{
 	
 	public static Select dropDownSelection(WebDriver driver, By prop)
 	{
+		System.out.println("java is simple");
 		Select x = new Select(driver.findElement(prop));
 		return x;	
 		
