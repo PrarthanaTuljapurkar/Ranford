@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Test is passed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="43705" started-at="2018-06-08T04:39:08Z" finished-at="2018-06-08T04:39:51Z">
+    <groups>
+    </groups>
+    <test name="FirefoxTest" duration-ms="12415" started-at="2018-06-08T04:39:08Z" finished-at="2018-06-08T04:39:20Z">
+      <class name="com.pagelibrary.com.Ranford.TestExecution">
+        <test-method status="PASS" signature="verifyLaunch(java.lang.String)[pri:0, instance:com.pagelibrary.com.Ranford.TestExecution@50d0686]" name="verifyLaunch" is-config="true" duration-ms="12403" started-at="2018-06-08T04:39:08Z" finished-at="2018-06-08T04:39:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLaunch -->
+      </class> <!-- com.pagelibrary.com.Ranford.TestExecution -->
+    </test> <!-- FirefoxTest -->
+    <test name="ChromeTest" duration-ms="31247" started-at="2018-06-08T04:39:20Z" finished-at="2018-06-08T04:39:51Z">
+      <class name="com.pagelibrary.com.Ranford.TestExecution">
+        <test-method status="PASS" signature="verifyLaunch(java.lang.String)[pri:0, instance:com.pagelibrary.com.Ranford.TestExecution@43bd930a]" name="verifyLaunch" is-config="true" duration-ms="27661" started-at="2018-06-08T04:39:20Z" finished-at="2018-06-08T04:39:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLaunch -->
+        <test-method status="PASS" signature="verifylogin()[pri:1, instance:com.pagelibrary.com.Ranford.TestExecution@43bd930a]" name="verifylogin" duration-ms="3565" started-at="2018-06-08T04:39:48Z" finished-at="2018-06-08T04:39:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test is passed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifylogin -->
+      </class> <!-- com.pagelibrary.com.Ranford.TestExecution -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite1 -->
+</testng-results>
