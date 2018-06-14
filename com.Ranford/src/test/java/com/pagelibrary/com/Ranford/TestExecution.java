@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import Excel.excel_utility;
 
 public class TestExecution extends Repository{
+
 	@Parameters({"browser"})
     @BeforeTest
 	public void verifyLaunch(String browser)
@@ -44,7 +45,7 @@ public class TestExecution extends Repository{
 	}*/
 	
 	@Test(priority=3)
-	public void verify_content() throws IOException
+	public void verify_content() throws IOException, InterruptedException
 	{
 		excel_utility.excelConnection("Excelfile.xls", "Sheet1");
 		
@@ -57,8 +58,8 @@ public class TestExecution extends Repository{
 			//String bname=Excel_class.readdata(0, i);
 			createBranch(excel_utility.readdata(0, i), excel_utility.readdata(1, i), excel_utility.readdata(2, i), excel_utility.readdata(3, i), excel_utility.readdata(4, i), excel_utility.readdata(5, i));
 			
+			Thread.sleep(3000);
 			String txt = driver.switchTo().alert().getText();
-			
 			driver.switchTo().alert().accept();
 			
 			if(txt.contains("created Sucessfully"))

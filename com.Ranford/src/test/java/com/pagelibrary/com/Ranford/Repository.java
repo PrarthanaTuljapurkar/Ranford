@@ -71,6 +71,7 @@ public class Repository extends BaseClass{
 		GenericPage.dropDownSelection(driver, getlocator("State_id")).selectByVisibleText(state);
 		GenericPage.dropDownSelection(driver, getlocator("City_id")).selectByVisibleText(city);
 		Branches.Submit_button(driver).click();
+		driver.switchTo().alert().accept();
 		
 		
 	}
